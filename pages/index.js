@@ -20,17 +20,24 @@ export default function Home() {
   }, [])
 
   return (
-    <div 
-      className={styles.container}
-      style={{ color: thisColor }} 
-      onClick={changeName}
-      tabIndex="0"
-      onKeyDown={changeName}
-      ref={container}
-    >
-      <h1>
-        {capitalize(textColor)}
-      </h1>
-    </div>
+    <>
+      <Head>
+        <title>Concentrate</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <div 
+        className={styles.container}
+        style={{ color: thisColor }} 
+        onClick={changeName}
+        tabIndex="0"
+        onKeyDown={changeName}
+        ref={container}
+      >
+        <h1>
+          {capitalize(textColor)}
+        </h1>
+      </div>
+    </>
   )
 }
