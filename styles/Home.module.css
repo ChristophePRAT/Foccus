@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 .container {
   min-height: 100vh;
@@ -13,7 +13,7 @@
 }
 .container h1 {
   font-size: 25vw;
-  font-family: 'Varela Round', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Helvetica Neue', Arial, sans-serif;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
