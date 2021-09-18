@@ -48,6 +48,21 @@ export default function Home() {
         <link rel="manifest" href="/manifest.json" />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-1BGDDQ0YGN"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-1BGDDQ0YGN', { page_path: window.location.pathname });
+            `,
+          }}
+        />
       </Head>
       <div 
         className={styles.container}
