@@ -1,35 +1,35 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { useEffect, useState, useRef } from 'react'
-import { getColor, capitalize }from './api/helpers'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import { useEffect, useState, useRef } from "react";
+import { getColor, capitalize } from "./api/helpers";
 
 export default function Home() {
-  const [textColor, setTextColor ] = useState("");
-  const [thisColor, setColor] = useState("");
-  const container = useRef(null)
+    const [textColor, setTextColor] = useState("");
+    const [thisColor, setColor] = useState("");
+    const container = useRef(null);
 
-  const changeName = () => {
-    let localTextColor = getColor([textColor]);
+    const changeName = () => {
+        let localTextColor = getColor([textColor]);
 
-    setTextColor(localTextColor);
-    setColor(getColor([localTextColor, thisColor]));
-    console.log(thisColor)
-  }
-  useEffect(() => {
-    changeName();
-    container.current.focus();
-  }, [])
+        setTextColor(localTextColor);
+        setColor(getColor([localTextColor, thisColor]));
+        console.log(thisColor);
+    };
+    useEffect(() => {
+        changeName();
+        container.current.focus();
+    }, []);
 
-  return (
-    <>
-      <Head>
+    return (
+        <>
+            {/* <Head>
         <title>Foccus</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Focus in less than a minute" />
         <meta name="theme-color" content="#000000" />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
         <meta name="keywords" content="focus concentrate concentration foccus work" />
-        
+
 
         <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
@@ -63,19 +63,20 @@ export default function Home() {
             `,
           }}
         />
-      </Head>
-      <div 
-        className={styles.container}
-        style={{ color: thisColor }} 
-        onClick={changeName}
-        tabIndex="0"
-        onKeyDown={changeName}
-        ref={container}
-      >
-        <h1>
-          {capitalize(textColor)}
-        </h1>
-      </div>
-    </>
-  )
+      </Head> */}
+            <Head>
+                <link rel="manifest" href="/manifest.json" />
+            </Head>
+            <div
+                className={styles.container}
+                style={{ color: thisColor }}
+                onClick={changeName}
+                tabIndex="0"
+                onKeyDown={changeName}
+                ref={container}
+            >
+                <h1>{capitalize(textColor)}</h1>
+            </div>
+        </>
+    );
 }
