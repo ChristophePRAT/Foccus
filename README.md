@@ -11,6 +11,7 @@ While speaking with a friend, she mentionned she had trouble getting concentrate
 
 You are shown a a text with then name of a color, colored in another color as follows. The goal is to say the name of the color instead of reading the text. In the previous example, you should say "blue".
 Repeating this 10 times quickly can make you very focused in minutes.
+
 ---
 
 ## Run this locally
