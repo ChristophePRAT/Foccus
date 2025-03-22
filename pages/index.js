@@ -65,6 +65,22 @@ export default function Home() {
         />
       </Head> */}
             <Head>
+                <title>Foccus</title>
+                <meta
+                    name="viewport"
+                    content="initial-scale=1.0, width=device-width"
+                />
+                <meta
+                    name="description"
+                    content="Focus in less than a minute"
+                />
+                <meta name="theme-color" content="#000000" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+                <meta
+                    name="keywords"
+                    content="focus concentrate concentration foccus work"
+                />
+
                 <link rel="manifest" href="/manifest.json" />
             </Head>
             <div
