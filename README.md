@@ -1,6 +1,6 @@
 # Foccus
 ## TLDR
-[Foccus](foccus.vercel.app/) is a very simple web app with the intent to make you **focused in 1 minute**. You need to say the **text color** instead of reading the text.
+[Foccus](https://foccus.vercel.app/) is a very simple web app with the intent to make you **focused in 1 minute**. You need to say the **text color** instead of reading the text.
 ![image](https://github.com/user-attachments/assets/ac4a76d0-04f0-4253-a066-fb0d6f0de4fe)
 
 ## Motivation
